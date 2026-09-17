@@ -9,11 +9,11 @@ while (n<=0)
     }
     catch (FormatException) //буквы вместо числа
     {
-        Console.WriteLine("Ошибка ввода.");
+        Console.WriteLine("Ошибка");
     }
-    catch(OverflowException) //слишком огромное число
+    catch(OverflowException) //слишком большое число
     {
-        Console.WriteLine("Ошибка ввода.");
+        Console.WriteLine("Ошибка");
     }
     
 }
@@ -38,6 +38,7 @@ for (int i = 0; i<numbers.Length; i++)
     }
 }
 Console.WriteLine("Исходный массив: "+string.Join(", ", numbers));
+
 Console.Write("Обратный порядок: ");
 for (int i = numbers.Length - 1; i>=0; i--)
 {
