@@ -28,12 +28,12 @@ for (int i = 0; i<numbers.Length; i++)
     catch (FormatException)
     {
         
-        Console.WriteLine("Ошибка ввода.");
+        Console.WriteLine("Ошибка");
         i--; //при ошибке заставляет не переходить к некст элементу а еще раз запрашивает элемент
     }
     catch (OverflowException)
     {
-        Console.WriteLine("Ошибка ввода.");
+        Console.WriteLine("Ошибка");
         i--; 
     }
 }
